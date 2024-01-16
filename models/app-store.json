@@ -1,10 +1,10 @@
 {
   "info": {
     "appTitle": "Playlist Maker",
-    "version": "0.2",
+    "version": 0.2,
     "creators": [
       {
-        "name": "Mary Ryan",
+        "name": "Mary Lyng",
         "role": "Web Developer"
       },
       {
