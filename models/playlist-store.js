@@ -20,6 +20,10 @@ const playlistStore = {
       (playlist) => playlist.id === id
     );
   },
+  
+  addSong(id, song) {
+    this.store.addItem(this.collection, id, this.array, song);
+  },
 };
 
 export default playlistStore;
