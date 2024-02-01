@@ -1,4 +1,4 @@
-{{#if singlePlaylist.songs}}
+{{#if songs}}
 
   <table class="ui fixed striped table">
     <thead>
@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      {{#each singlePlaylist.songs}}
+      {{#each songs}}
         <tr>
           <td>
             {{title}}
@@ -26,7 +26,7 @@
             {{duration}}
           </td>
           <td class="center aligned">
-            <a href="/playlist/{{../singlePlaylist.id}}/deletesong/{{id}}" class="ui icon button" title="Delete song">
+            <a href="/playlist/{{../id}}/deletesong/{{id}}" class="ui icon button" title="Delete song">
               <i class="ui trash icon"></i>
             </a>
           </td>
