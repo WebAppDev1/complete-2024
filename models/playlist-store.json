@@ -71,7 +71,15 @@
     {
       "id": "03",
       "title": "Beethoven Unfinished Symphonies",
-      "songs": []
+      "songs": [
+        {
+          "id": "0284b082-47fd-4042-8441-6b95bd50002d",
+          "title": "bad",
+          "artist": "U2",
+          "genre": "Rock ",
+          "duration": "4"
+        }
+      ]
     },
     {
       "id": "a15126e1-89a6-4160-8858-c9ad474e9484",
