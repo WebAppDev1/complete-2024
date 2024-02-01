@@ -12,48 +12,27 @@
       </tr>
     </thead>
   <tbody>
+      
       {{#each songs}}
-        <form 
-          class = "ui stacked segment form" 
-          action="/playlist/{{../id}}/updatesong/{{id}}" 
-          method="POST"
-        >
-          <tr class="fields">
-            <td class="field">
-              <span class="ui input">
-               <input type="text" name="title" autofocus required 
-                      title = "Please include a valid Title" placeholder="Title" value = "{{capitalise title}}">
-              </span>
-            </td>
-            <td class="field">
-              <span class="ui input">
-                <input type="text" name="artist" required 
-                       title = "Please include a valid Artist" placeholder="Artist" value = "{{capitalise artist}}">
-              </span>
-            </td>
-            <td class="field">
-              <span class="ui input">
-                <input type="text" name="genre" autofocus required title = "Please include a valid Genre" placeholder="Genre" value = "{{capitalise genre}}">         
-              </span>
-            </td>
-            <td class="field">
-              <span class="ui input">
-                <input type="text" name="duration" required title = "Please enter a valid duration" placeholder="Duration" value = "{{duration}}">
-              </span>
-            </td>
-            <td class="center aligned">
-              <button class="ui submit icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-            </td>
-            <td class="center aligned">
-              <a href="/playlist/{{../id}}/deletesong/{{id}}" class="ui icon button delsong">
-                <i class="ui trash icon"></i>
-              </a>
-            </td>
-          </tr>
-        </form> 
+      
+        {{> listOneSong playlistId=../id}}
+        {{> editsong playlistId=../id}}
+    
+    <script>
+          $(document).ready(function(){
+            $("#showEdit").click(function(){
+              $("#song").hide();
+              $("#edit").show();
+            });
+            $("#hideEdit").click(function(){
+              $("#song").show();
+              $("#edit").hide();
+            });
+          });
+        </script>
+                
       {{/each}}
+    
     </tbody>
   </table>
 
