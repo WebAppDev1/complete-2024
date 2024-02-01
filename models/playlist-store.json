@@ -76,15 +76,7 @@
     {
       "id": "d12f21e5-2624-4ce0-aec1-985b62436120",
       "title": "New Playlist",
-      "songs": [
-        {
-          "id": "08398186-c68f-4bcd-9a29-bc7939775e9b",
-          "title": "My song",
-          "artist": "U2",
-          "genre": "Rock",
-          "duration": "23"
-        }
-      ]
+      "songs": []
     },
     {
       "id": "a15126e1-89a6-4160-8858-c9ad474e9484",
