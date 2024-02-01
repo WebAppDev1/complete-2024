@@ -45,6 +45,7 @@ const playlist = {
     const playlistId = request.params.id;
     const songId = request.params.songid;
     logger.debug("updating song " + songId);
+     logger.info(request.body.title)
     const updatedSong = {
       id: songId,
       title: request.body.title,

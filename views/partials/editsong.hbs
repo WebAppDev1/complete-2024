@@ -3,19 +3,19 @@
     <td>
       <span class="ui input">
         <input type="text" name="title" autofocus required
-          title="Please include a valid Title" placeholder="Title" value="{{title}}" />
+          title="Please include a valid Title" placeholder="Title" value="{{capitalise title}}" />
       </span>
     </td>
     <td>
       <span class="ui input">
         <input type="text" name="artist" required 
-               title="Please include a valid Artist" placeholder="Artist" value="{{artist}}" />
+               title="Please include a valid Artist" placeholder="Artist" value="{{capitalise artist}}" />
       </span>
     </td>
     <td>
       <span class="ui input">
         <input type="text" name="genre" required
-          title="Please include a valid Genre" placeholder="Genre" value="{{genre}}" />
+          title="Please include a valid Genre" placeholder="Genre" value="{{capitalise genre}}" />
       </span>
     </td>
     <td>
@@ -25,7 +25,7 @@
       </span>
     </td>
     <td>
-      <button class="ui icon button" id="hideEdit{{@index}}" title="Exit without saving">
+      <button type = "button" class="ui icon button" id="hideEdit{{@index}}" title="Exit without saving">
         <i class="ui undo icon"></i>
       </button>
     </td>
