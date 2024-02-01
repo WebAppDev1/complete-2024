@@ -64,7 +64,7 @@
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven",
           "genre": "Classical",
-          "duration": 29
+          "duration": "21"
         }
       ]
     },
@@ -74,7 +74,7 @@
       "songs": [
         {
           "id": "0284b082-47fd-4042-8441-6b95bd50002d",
-          "title": "Badd",
+          "title": "Badw4t",
           "artist": "U2",
           "genre": "Rock ",
           "duration": "4"

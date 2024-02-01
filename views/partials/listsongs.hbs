@@ -20,16 +20,16 @@
     
     <script>
           $(document).ready(function(){
-            $("#showEdit").click(function(){
-              $("#song").hide();
-              $("#edit").show();
+            $("#showEdit{{@index}}").click(function(){
+              $("#song{{@index}}").hide();
+              $("#edit{{@index}}").show();
             });
-            $("#hideEdit").click(function(){
-              $("#song").show();
-              $("#edit").hide();
+            $("#hideEdit{{@index}}").click(function(){
+              $("#song{{@index}}").show();
+              $("#edit{{@index}}").hide();
             });
           });
-        </script>
+    </script>
                 
       {{/each}}
     
