@@ -74,9 +74,9 @@
       "songs": [
         {
           "id": "0284b082-47fd-4042-8441-6b95bd50002d",
-          "title": "Bad",
-          "artist": "U2  ",
-          "genre": "rock",
+          "title": "Bad ",
+          "artist": "U2",
+          "genre": "Rock ",
           "duration": "4"
         }
       ]
@@ -87,9 +87,9 @@
       "songs": [
         {
           "id": "5f45cf12-75b8-4c25-8f2b-987bb2a41f8c",
-          "title": "Beautiful Day   ",
-          "artist": "U2    ",
-          "genre": "Rock  ",
+          "title": "Beautiful Day     ",
+          "artist": "U2      ",
+          "genre": "Rock    ",
           "duration": "5"
         }
       ],
