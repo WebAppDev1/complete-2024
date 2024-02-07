@@ -48,10 +48,10 @@ const playlist = {
      logger.info(request.body.title)
     const updatedSong = {
       id: songId,
-      title: request.body.title,
-      artist: request.body.artist,
-      genre: request.body.genre,
-      duration: request.body.duration
+      title: request.body.etitle,
+      artist: request.body.eartist,
+      genre: request.body.egenre,
+      duration: request.body.eduration
     };
     playlistStore.editSong(playlistId, songId, updatedSong);
     response.redirect('/playlist/' + playlistId);
