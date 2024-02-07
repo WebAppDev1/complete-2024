@@ -2,30 +2,30 @@
   <tr class="hide" id="edit{{@index}}">
     <td>
       <span class="ui input">
-        <input type="text" name="etitle" autofocus required
+        <input type="text" name="title" autofocus required
           title="Please include a valid Title" placeholder="Title" value="{{title}}">
       </span>
     </td>
     <td>
       <span class="ui input">
-        <input type="text" name="eartist" required 
+        <input type="text" name="artist" required 
                title="Please include a valid Artist" placeholder="Artist" value="{{artist}}">
       </span>
     </td>
     <td>
       <span class="ui input">
-        <input type="text" name="egenre" required
+        <input type="text" name="genre" required
           title="Please include a valid Genre" placeholder="Genre" value="{{genre}}">
       </span>
     </td>
     <td>
       <span class="ui input">
-        <input type="text" name="eduration" required
+        <input type="text" name="duration" required
           title="Please enter a valid duration" placeholder="Duration" value="{{duration}}">
       </span>
     </td>
     <td>
-      <button type = "button" class="ui icon button" id="hideEdit{{@index}}" title="Exit without saving">
+      <button type = "reset" class="ui icon button" id="hideEdit{{@index}}" title="Exit without saving">
         <i class="ui undo icon"></i>
       </button>
     </td>
@@ -36,3 +36,6 @@
     </td>
   </tr>
 </form>
+<script>
+  document.querySelector("form").reset();
+</script>
