@@ -18,18 +18,7 @@
         {{> listOneSong playlistId=../id}}
         {{> editsong playlistId=../id}}
     
-  <!--  <script>
-          $(document).ready(function(){
-            $("#showEdit{{@index}}").click(function(){
-              $("#song{{@index}}").hide();
-              $("#edit{{@index}}").show();
-            });
-            $("#hideEdit{{@index}}").click(function(){
-              $("#song{{@index}}").show();
-              $("#edit{{@index}}").hide();
-            });
-          });
-    </script>-->
+
     <script>
       document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
             document.querySelector("#song{{@index}}").style.display = "none";
