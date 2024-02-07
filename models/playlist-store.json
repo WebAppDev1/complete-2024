@@ -84,7 +84,15 @@
     {
       "id": "a15126e1-89a6-4160-8858-c9ad474e9484",
       "title": "Newer Playlist",
-      "songs": [],
+      "songs": [
+        {
+          "id": "5f45cf12-75b8-4c25-8f2b-987bb2a41f8c",
+          "title": "Beautiful Day",
+          "artist": "U2 ",
+          "genre": "Rock ",
+          "duration": "4.5"
+        }
+      ],
       "date": "2024-01-31T10:14:05.223Z"
     }
   ]
