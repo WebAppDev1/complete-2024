@@ -24,20 +24,6 @@
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 15
-        },
-        {
-          "id": "4157b28f-e0f9-4f2a-bd44-24488e2bd96f",
-          "title": "Piano Sonato No. 12",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": "21"
-        },
-        {
-          "id": "1d5ffb36-b2d6-4299-96a5-1d0f5b169f16",
-          "title": "Piano Sonato No. 15",
-          "artist": "Beethoven",
-          "genre": "Classical ",
-          "duration": "21"
         }
       ]
     },
