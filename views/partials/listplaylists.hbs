@@ -9,51 +9,20 @@
   {{/unless}}
 
   {{#each playlists}}
-    <section class="ui left aligned middle aligned segment">
-
-      <h3 class="ui header">
-        {{uppercase title}}
-      </h3>
-      
-      <p>
-      <i class="music icon"></i>
-      {{#if songs}}
-        Total songs:
-        {{songs.length}}
-
-        {{else}}
-        Empty playlist!
-      {{/if}}
-
-      {{#if date}}
-        <br>
-        <i class="calendar alternate outline icon"></i>
-        Created on <i>{{formatDate date}}</i>
-      {{/if}}
-    </p>
-      
-      <a href="/playlist/{{id}}" class="ui icon button">
-          <i class="open folder icon"></i>
-      </a>
-      <a href="/dashboard/deleteplaylist/{{id}}" class="ui icon button"> 
-          <i class="trash icon"></i>
-      </a>
-    <button class="ui icon button" title="Edit playlist" id="showEdit{{@index}}">
-      <i class="ui pencil icon"></i>
-    </button>
+       {{> listOnePlaylist playlistId=id}}
        {{> editplaylist playlistId=id}}
-    </section>
+ 
   
   <script>
          document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
-                                console.log("yes")
-            //document.querySelector("#song{{@index}}").style.display = "none";
-            document.querySelector("#editp{{@index}}").style.display = "block";
+                          
+            document.querySelector("#playlist{{@index}}").style.display = "none";
+            document.querySelector("#edit{{@index}}").style.display = "block";
          })
          document.querySelector("#hideEdit{{@index}}").addEventListener ('click', () => {
-                                console.log("no")
-           // document.querySelector("#song{{@index}}").style.display = "table-row";
-            document.querySelector("#editp{{@index}}").style.display = "none";
+                                
+            document.querySelector("#playlist{{@index}}").style.display = "block";
+            document.querySelector("#edit{{@index}}").style.display = "none";
          })
         </script>
   {{/each}}
