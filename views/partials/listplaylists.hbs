@@ -41,18 +41,19 @@
     <button class="ui icon button" title="Edit playlist" id="showEdit{{@index}}">
       <i class="ui pencil icon"></i>
     </button>
+       {{> editplaylist playlistId=id}}
     </section>
   
   <script>
          document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
                                 console.log("yes")
             //document.querySelector("#song{{@index}}").style.display = "none";
-            document.querySelector("#edit{{@index}}").style.display = "table-row";
+            document.querySelector("#editp{{@index}}").style.display = "block";
          })
          document.querySelector("#hideEdit{{@index}}").addEventListener ('click', () => {
                                 console.log("no")
-            document.querySelector("#song{{@index}}").style.display = "table-row";
-            document.querySelector("#edit{{@index}}").style.display = "none";
+           // document.querySelector("#song{{@index}}").style.display = "table-row";
+            document.querySelector("#editp{{@index}}").style.display = "none";
          })
         </script>
   {{/each}}

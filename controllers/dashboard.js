@@ -46,8 +46,8 @@ const dashboard = {
       id: playlistId,
       title: request.body.title,
     };
-    playlistStore.editSong(playlistId,  updatedPlaylist);
-    response.redirect('/playlist/' + playlistId);
+    playlistStore.editPlaylist(playlistId,  updatedPlaylist);
+    response.redirect("/dashboard");
   }
 };
 

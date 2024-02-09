@@ -15,7 +15,7 @@ router.get('/about', about.createView);
 router.get('/playlist/:id', playlist.createView);
 router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
-router.get('/dashboard/updateplaylist/:id', dashboard.updatePlaylist);
+router.post('/dashboard/updateplaylist/:id', dashboard.updatePlaylist);
 
 router.post('/playlist/:id/addsong', playlist.addSong);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
