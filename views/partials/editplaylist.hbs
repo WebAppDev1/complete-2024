@@ -1,5 +1,7 @@
 <form class="ui stacked segment form" action="dashboard/updateplaylist/{{playlistId}}" method="POST">
-  <tr class="hide" id="edit{{@index}}">
+  <table class="hide" id="edit{{@index}}">
+    
+<tr>
     <td>
       <span class="ui input">
         <input type="text" name="title" autofocus required
@@ -17,4 +19,5 @@
       </button>
     </td>
   </tr>
+</table>
 </form>
