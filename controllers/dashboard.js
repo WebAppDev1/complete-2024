@@ -37,6 +37,18 @@ const dashboard = {
     playlistStore.removePlaylist(playlistId);
     response.redirect("/dashboard");
 },
+  
+    updatePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug("updating playlist " + playlistId);
+     logger.info(request.body.title)
+    const updatedPlaylist = {
+      id: playlistId,
+      title: request.body.title,
+    };
+    playlistStore.editSong(playlistId,  updatedPlaylist);
+    response.redirect('/playlist/' + playlistId);
+  }
 };
 
 export default dashboard;

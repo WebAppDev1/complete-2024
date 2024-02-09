@@ -41,6 +41,10 @@ const playlistStore = {
   editSong(id, songId, updatedSong) {
     this.store.editItem(this.collection, id, songId, this.array, updatedSong);
   },
+  
+    editPlaylist(playlistId, updatedPlaylist) {
+    this.store.editCollection(this.collection, playlistId, updatedPlaylist);
+  },
 };
 
 export default playlistStore;
