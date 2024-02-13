@@ -42,7 +42,7 @@ const playlistStore = {
     this.store.editItem(this.collection, id, songId, this.array, updatedSong);
   },
   
-    editPlaylist(playlistId, updatedPlaylist) {
+  editPlaylist(playlistId, updatedPlaylist) {
     this.store.editCollection(this.collection, playlistId, updatedPlaylist);
   },
 };
