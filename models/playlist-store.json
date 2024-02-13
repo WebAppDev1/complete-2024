@@ -55,16 +55,18 @@
       ]
     },
     {
-      "id": "03",
-      "title": "Beethoven Unfinished Symphonies"
-    },
-    {
-      "id": "a15126e1-89a6-4160-8858-c9ad474e9484",
-      "title": "Newer Playlist"
-    },
-    {
-      "id": "e1f1ad88-2c7b-4822-8091-18fced2a6615",
-      "title": "Tester Playlist"
+      "id": "5731a402-a26b-48cb-a2a2-8633f59ea0ae",
+      "title": "Test Playlist 2024",
+      "songs": [
+        {
+          "id": "91cf8561-7fc3-45aa-a8b1-e684b46b175f",
+          "title": "Bad",
+          "artist": "U2",
+          "genre": "Rock",
+          "duration": "3"
+        }
+      ],
+      "date": "2024-02-13T15:01:49.459Z"
     }
   ]
 }

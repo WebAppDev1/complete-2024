@@ -41,10 +41,15 @@ const dashboard = {
     updatePlaylist(request, response) {
     const playlistId = request.params.id;
     logger.debug("updating playlist " + playlistId);
-     logger.info(request.body.title)
+    let data=playlistStore.getPlaylist(playlistId);
+    let storedsongs= data.songs;
+    let storeddate = data.date;  
+    logger.info(request.body.title)
     const updatedPlaylist = {
       id: playlistId,
       title: request.body.title,
+      songs:storedsongs,
+      date:storeddate
     };
     playlistStore.editPlaylist(playlistId,  updatedPlaylist);
     response.redirect("/dashboard");
