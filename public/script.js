@@ -8,3 +8,12 @@ document.querySelectorAll(".delsong").forEach(element => {
       }
     })        
 });
+
+
+document.querySelectorAll(".delplaylist").forEach(element => {
+    element.addEventListener("click", (evt) => {
+      if  (!confirm('Really delete this Playlist?')) {
+         evt.preventDefault()
+      }
+    })        
+});
