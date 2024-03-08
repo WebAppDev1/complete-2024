@@ -56,8 +56,16 @@
     },
     {
       "id": "5731a402-a26b-48cb-a2a2-8633f59ea0ae",
-      "title": "Test Playlist 24",
-      "songs": [],
+      "title": "Test Playlist",
+      "songs": [
+        {
+          "id": "4c220a80-b132-4ae8-b413-67ce97404acb",
+          "title": "Beautiful Day",
+          "artist": "U2",
+          "genre": "Rock ",
+          "duration": "5"
+        }
+      ],
       "date": "2024-02-13T15:01:49.459Z"
     }
   ]
