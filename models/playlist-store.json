@@ -55,18 +55,18 @@
       ]
     },
     {
-      "id": "5731a402-a26b-48cb-a2a2-8633f59ea0ae",
-      "title": "Test Playlist",
+      "id": "eb6d6eff-8bd9-470c-82c2-79adcb2b2d63",
+      "title": "Test playlist",
       "songs": [
         {
-          "id": "4c220a80-b132-4ae8-b413-67ce97404acb",
-          "title": "Beautiful Day",
-          "artist": "U2",
-          "genre": "Rock ",
+          "id": "2f8da97d-60f5-4bdf-a275-e107238f1ca3",
+          "title": "Piano Concerto 1",
+          "artist": "Beethoven",
+          "genre": "Classical ",
           "duration": "5"
         }
       ],
-      "date": "2024-02-13T15:01:49.459Z"
+      "date": "2024-03-11T15:30:02.873Z"
     }
   ]
 }
