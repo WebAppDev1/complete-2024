@@ -24,15 +24,10 @@ const about = {
     let currentLargest = 0;
     let largestPlaylistTitle = "";
     for (let playlist of playlists) {
-      if (playlist.songs.length > currentLargest) {
-        currentLargest = playlist.songs.length;        
+      if (playlist.songs.length >= currentLargest) {
+        currentLargest = playlist.songs.length;   
+        largestPlaylistTitle += playlist.title + ", ";
     }
-    }
-      
-    for (let playlist of playlists) {
-      if (playlist.songs.length === currentLargest) {
-            largestPlaylistTitle += playlist.title + ", ";
-      }
     }
     
     let currentSmallest = 1;
@@ -42,15 +37,12 @@ const about = {
     let smallestPlaylistTitle = "";
 
     for (let playlist of playlists) {
-      if (playlist.songs.length < currentSmallest) {
+      if (playlist.songs.length <= currentSmallest) {
         currentSmallest = playlist.songs.length;
-      }
-    }
-    for (let playlist of playlists) {
-      if (playlist.songs.length === currentSmallest) {
         smallestPlaylistTitle += playlist.title + ", ";
       }
     }
+
     const viewData = {
       title: "Playlist App About",
       displayNumPlaylists: numPlaylists,
