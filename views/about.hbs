@@ -8,12 +8,12 @@
   </p>
   
   <div class="ui center aligned grid">
-    <div class="eight wide column">
+    <div class="sixteen wide column">
       
-        <div class="ui centered two statistics">
+        <div class="ui centered three statistics">
           <div class="statistic">
             <div class="value">
-              <i class="microphone icon"></i> 
+              <i class="red microphone icon"></i> 
             </div>
             <div class="label">
               {{displayNumPlaylists}} playlists
@@ -22,23 +22,47 @@
 
           <div class="statistic">
             <div class="value">
-              <i class="music icon"></i> 
+              <i class="orange music icon"></i> 
             </div>
             <div class="label">
               {{displayNumSongs}} songs
             </div>
           </div> 
           
-<div class="statistic">
+         <div class="statistic">
             <div class="value">
-              <i class="music icon"></i> 
+              <i class="yellow music icon"></i> 
             </div>
             <div class="label">
-              {{displayNumSongs}} songs
+              {{average}} average songs per playlist
             </div>
           </div> 
-        </div>
+        </div>    
+    </div>
+  </div>
+  <div class="ui center aligned grid">
+        <div class="sixteen wide column">
       
+        <div class="ui centered two statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="blue microphone icon"></i> 
+            </div>
+            <div class="label">
+              largest playlist:{{largest}} 
+            </div>
+          </div>
+
+          
+         <div class="statistic">
+            <div class="value">
+              <i class="green music icon"></i> 
+            </div>
+            <div class="label">
+              smallest playlist:{{smallest}} 
+            </div>
+          </div> 
+        </div>    
     </div>
   </div>
 

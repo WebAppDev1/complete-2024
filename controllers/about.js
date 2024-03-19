@@ -16,12 +16,48 @@ const about = {
       numSongs += item.songs.length;
     }
     
-    let averagePerPlaylist = numPlaylists/numSongs;
+    let averagePerPlaylist = 0;
+    if (numPlaylists > 0) {
+      averagePerPlaylist = numSongs/numPlaylists;
+    }
+     
+    let currentLargest = 0;
+    let largestPlaylistTitle = "";
+    for (let playlist of playlists) {
+      if (playlist.songs.length > currentLargest) {
+        currentLargest = playlist.songs.length;        
+    }
+    }
+      
+    for (let playlist of playlists) {
+      if (playlist.songs.length === currentLargest) {
+            largestPlaylistTitle += playlist.title + ", ";
+      }
+    }
+    
+    let currentSmallest = 1;
+    if (numPlaylists > 0) {
+      currentSmallest = playlists[0].songs.length;
+    } 
+    let smallestPlaylistTitle = "";
+
+    for (let playlist of playlists) {
+      if (playlist.songs.length < currentSmallest) {
+        currentSmallest = playlist.songs.length;
+      }
+    }
+    for (let playlist of playlists) {
+      if (playlist.songs.length === currentSmallest) {
+        smallestPlaylistTitle += playlist.title + ", ";
+      }
+    }
     const viewData = {
       title: "Playlist App About",
       displayNumPlaylists: numPlaylists,
       displayNumSongs: numSongs,
-      average: averagePerPlaylist
+      average: averagePerPlaylist.toFixed(2),
+      largest: largestPlaylistTitle,
+      smallest: smallestPlaylistTitle
     };
 
     response.render("about", viewData);
