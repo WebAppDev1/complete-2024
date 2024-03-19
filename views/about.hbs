@@ -1,10 +1,45 @@
 {{> menu id="about"}}
 
-<section class="ui left aligned middle aligned segment">
+<section class="ui center aligned middle aligned segment">
   
-    <h2>About the Playlist App</h2>
-      <p>
-        More information about the app
-      </p>
+  <h2>About the Playlist App</h2>
+  <p>
+    The playlist app now contains: 
+  </p>
+  
+  <div class="ui center aligned grid">
+    <div class="eight wide column">
+      
+        <div class="ui centered two statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="microphone icon"></i> 
+            </div>
+            <div class="label">
+              {{displayNumPlaylists}} playlists
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              <i class="music icon"></i> 
+            </div>
+            <div class="label">
+              {{displayNumSongs}} songs
+            </div>
+          </div> 
+          
+<div class="statistic">
+            <div class="value">
+              <i class="music icon"></i> 
+            </div>
+            <div class="label">
+              {{displayNumSongs}} songs
+            </div>
+          </div> 
+        </div>
+      
+    </div>
+  </div>
 
 </section>
