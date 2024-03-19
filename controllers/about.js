@@ -18,7 +18,7 @@ const about = {
     
     let averagePerPlaylist = 0;
     if (numPlaylists > 0) {
-      averagePerPlaylist = numSongs/numPlaylists;
+      averagePerPlaylist = (numSongs/numPlaylists).toFixed(2);
     }
      
     let currentLargest = 0;
@@ -57,7 +57,7 @@ const about = {
       title: "Playlist App About",
       displayNumPlaylists: numPlaylists,
       displayNumSongs: numSongs,
-      average: averagePerPlaylist.toFixed(2),
+      average: averagePerPlaylist,
       largest: largestPlaylistTitle.substring(0, largestPlaylistTitle.length-2),
       smallest: smallestPlaylistTitle.substring(0, smallestPlaylistTitle.length-2),
     };
