@@ -55,18 +55,23 @@
       ]
     },
     {
-      id: "03",
-      title: "Beethoven Variations",
-      songs: [
+      "id": "03",
+      "title": "Beethoven Unfinished Symphonies",
+      "songs": [
         {
-          id: "10",
-          title: "Opus 34: Six variations on a theme in F major",
-          artist: "Beethoven",
+          "id": "10",
+          "title": "Opus 34: Six variations on a theme in F major",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": "16"
+          
         },
         {
-          id: "11",
-          title: "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
-          artist: "Beethoven",
+          "id": "11",
+          "title": "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": "12"
         }
       ]
     }
