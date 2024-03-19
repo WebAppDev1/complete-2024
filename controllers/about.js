@@ -46,6 +46,7 @@ const about = {
         currentSmallest = playlist.songs.length;
       }
     }
+    
     for (let playlist of playlists) {
       if (playlist.songs.length === currentSmallest) {
         smallestPlaylistTitle += playlist.title + ", ";
