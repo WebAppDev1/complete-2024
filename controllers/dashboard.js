@@ -48,8 +48,8 @@ const dashboard = {
     const updatedPlaylist = {
       id: playlistId,
       title: request.body.title,
-      songs:storedsongs,
-      date:storeddate
+     songs:storedsongs,
+     date:storeddate
     };
     playlistStore.editPlaylist(playlistId,  updatedPlaylist);
     response.redirect("/dashboard");
