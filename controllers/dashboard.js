@@ -3,30 +3,36 @@
 import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const dashboard = {
   createView(request, response) {
-    logger.info("Dashboard page loading!");
-    
+    logger.info('dashboard rendering');
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
-      title: "Playlist App Dashboard",
-      playlists: playlistStore.getAllPlaylists()
+      title: 'Playlist Dashboard',
+      playlists: playlistStore.getUserPlaylists(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-    
-    logger.debug(viewData.playlists);
-    
+    logger.info('about to render' + viewData.playlists);
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
   
   addPlaylist(request, response) {
-    const timestamp = new Date();
+    const loggedInUser = accounts.getCurrentUser(request);
     
+    const timestamp = new Date();
     const newPlaylist = {
       id: uuidv4(),
+      userid: loggedInUser.id,
       title: request.body.title,
       songs: [],
       date: timestamp
     };
+    
     playlistStore.addPlaylist(newPlaylist);
     response.redirect('/dashboard');
   },

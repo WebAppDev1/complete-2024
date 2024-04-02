@@ -10,7 +10,7 @@ import about from './controllers/about.js';
 import playlist from './controllers/playlist.js';
 import accounts from './controllers/accounts.js';
 
-router.get('/start', start.index);
+router.get('/start', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/about', about.createView);
 router.get('/playlist/:id', playlist.createView);
