@@ -8,8 +8,7 @@
     },
     {
       "id": "744eb0fa-6f18-4047-8c0a-a1aadb19199c",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "title": "Marge's Playlist",
+      "title": "Marge's Rock Classics",
       "songs": [],
       "date": "2024-04-02T16:45:38.848Z"
     },
@@ -19,6 +18,43 @@
       "title": "Homer's Playlist",
       "songs": [],
       "date": "2024-04-02T16:46:00.290Z"
+    },
+    {
+      "id": "9909e74a-1b55-463f-9e9d-2ea25a1c071d",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Marge's Rock Classics",
+      "songs": [
+        {
+          "id": "326eadc7-e7d7-4a41-8fb8-a3eda9f3b1c7",
+          "title": "Bad",
+          "artist": "U2",
+          "genre": "Rock",
+          "duration": "4"
+        },
+        {
+          "id": "9e281034-19d1-46d5-96d4-d74a57ba1b10",
+          "title": "Beautiful Day",
+          "artist": "U2",
+          "genre": "Rock",
+          "duration": "5"
+        }
+      ],
+      "date": "2024-04-02T17:03:56.785Z"
+    },
+    {
+      "id": "5fa76c8f-7ff8-45e3-bdac-e35bfcd87b71",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Marge's Classics",
+      "songs": [
+        {
+          "id": "e91106fc-8300-4ac4-be67-c77f08c47be1",
+          "title": "Trumpet Concerto",
+          "artist": "Mendelson",
+          "genre": "Classics",
+          "duration": "6"
+        }
+      ],
+      "date": "2024-04-02T17:04:27.054Z"
     }
   ]
 }

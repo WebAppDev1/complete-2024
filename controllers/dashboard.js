@@ -45,6 +45,7 @@ const dashboard = {
 },
   
     updatePlaylist(request, response) {
+      const loggedInUser = accounts.getCurrentUser(request);
     const playlistId = request.params.id;
     logger.debug("updating playlist " + playlistId);
     let data=playlistStore.getPlaylist(playlistId);
@@ -53,6 +54,7 @@ const dashboard = {
     logger.info(request.body.title)
     const updatedPlaylist = {
       id: playlistId,
+      userid: loggedInUser.id,
       title: request.body.title,
      songs:storedsongs,
      date:storeddate
