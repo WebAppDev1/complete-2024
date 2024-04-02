@@ -2,9 +2,10 @@
 
 import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
+import accounts from './accounts.js';
 
 const about = {
-  createView(request, response) {
+ /* createView(request, response) {
     logger.info("About page loading!");
     const playlists = playlistStore.getAllPlaylists();
 
@@ -64,6 +65,20 @@ const about = {
     };
 
     response.render("about", viewData);
+  },*/
+  
+   createView(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.info("About page loading!");
+    
+    if (loggedInUser) {
+      const viewData = {
+        title: 'About the Playlist App',
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+      response.render('about', viewData);
+    }
+    else response.redirect('/');    
   },
 };
 

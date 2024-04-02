@@ -1,5 +1,30 @@
 {{> welcomemenu }}
 
 <section class="ui center aligned middle aligned segment">
-  <p> Sign up or Log in... </p>
+  
+  <div class="ui center aligned grid">
+    <div class="ui eight wide column">
+      <h2 class="ui center aligned header">The Playlist App now contains:</h2>
+      <div class="ui two statistics">
+          <div class="ui huge statistic">
+              <div class="value">
+                  {{totalPlaylists}}
+              </div>
+              <div class="label">
+                  Playlists
+              </div>
+          </div>
+          <div class="ui huge statistic">
+              <div class="value">
+                  {{totalSongs}}
+              </div>
+              <div class="label">
+                  Songs
+              </div>
+          </div>
+      </div>
+      <h3> Sign up or Log in to start adding your own! </h3>
+    </div>
+  </div>
+  
 </section>
