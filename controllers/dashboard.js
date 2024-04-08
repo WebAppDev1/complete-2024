@@ -30,11 +30,13 @@ const dashboard = {
       userid: loggedInUser.id,
       title: request.body.title,
       songs: [],
-      date: timestamp
+      date: timestamp,
+      picture: request.files.picture,
     };
     
-    playlistStore.addPlaylist(newPlaylist);
-    response.redirect('/dashboard');
+    playlistStore.addPlaylist(newPlaylist, function() {
+        response.redirect("/dashboard");
+      });
   },
   
   deletePlaylist(request, response) {
