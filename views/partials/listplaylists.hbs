@@ -7,6 +7,8 @@
       Start adding your playlists!
     </h3>
   {{/unless}}
+<div class = "ui centered cards">
+  
 
   {{#each playlists}}
        {{> listOnePlaylist playlistId=id}}
@@ -26,5 +28,5 @@
          })
         </script>
   {{/each}}
-
+  </div>
 </section>

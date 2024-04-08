@@ -52,14 +52,16 @@ const dashboard = {
     logger.debug("updating playlist " + playlistId);
     let data=playlistStore.getPlaylist(playlistId);
     let storedsongs= data.songs;
-    let storeddate = data.date;  
+    let storeddate = data.date; 
+    let storedpic = data.picture
     logger.info(request.body.title)
     const updatedPlaylist = {
       id: playlistId,
       userid: loggedInUser.id,
       title: request.body.title,
      songs:storedsongs,
-     date:storeddate
+     date:storeddate,
+      picture: storedpic
     };
     playlistStore.editPlaylist(playlistId,  updatedPlaylist);
     response.redirect("/dashboard");
