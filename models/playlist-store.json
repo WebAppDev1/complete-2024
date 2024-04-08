@@ -64,6 +64,14 @@
       ],
       "date": "2024-04-08T11:57:53.029Z",
       "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1712577473/jb2eyrehbyhliywcjddm.jpg"
+    },
+    {
+      "id": "e103fd43-390f-4d62-b7ae-037539f6bc64",
+      "userid": "a07b8c44-11cf-4ef2-93ed-0da593e21413",
+      "title": "Doggy Playlist",
+      "songs": [],
+      "date": "2024-04-08T14:56:33.246Z",
+      "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1712588193/ymgybtn8kni4ep2m47np.jpg"
     }
   ]
 }
