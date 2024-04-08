@@ -13,13 +13,6 @@
       "date": "2024-04-02T16:45:38.848Z"
     },
     {
-      "id": "50562a0e-ac4d-435b-a728-554468e82db1",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Homer's Playlist",
-      "songs": [],
-      "date": "2024-04-02T16:46:00.290Z"
-    },
-    {
       "id": "9909e74a-1b55-463f-9e9d-2ea25a1c071d",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "Marge's Rock Classics",
@@ -59,8 +52,16 @@
     {
       "id": "6978e869-d3c5-494b-ae14-de3400c0e28e",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Test",
-      "songs": [],
+      "title": "Homer's Playlist",
+      "songs": [
+        {
+          "id": "4fb50e51-9db2-4765-81d9-45901d5f7800",
+          "title": "test",
+          "artist": "U2",
+          "genre": "Rock",
+          "duration": "3"
+        }
+      ],
       "date": "2024-04-08T11:57:53.029Z",
       "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1712577473/jb2eyrehbyhliywcjddm.jpg"
     }
