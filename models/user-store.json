@@ -20,6 +20,14 @@
       "email": "mlyng@wit.ie",
       "password": "Trustno1",
       "id": "275cd6ef-1b9b-46c3-b6f2-3856dd7c6976"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Lyng",
+      "email": "mlyng@setu.ie",
+      "password": "Trustno1",
+      "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1712575614/q7l9ckmv1zow0wjzsonb.jpg",
+      "id": "a07b8c44-11cf-4ef2-93ed-0da593e21413"
     }
   ]
 }
