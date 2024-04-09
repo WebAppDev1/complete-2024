@@ -88,7 +88,7 @@ const about = {
       }
 
       let currentLargest = 0;
-      let largestPlaylistTitle = "";
+      let largestPlaylistTitle = [];
       for (let playlist of playlists) {
         if (playlist.songs.length > currentLargest) {
           currentLargest = playlist.songs.length;
@@ -97,7 +97,7 @@ const about = {
 
       for (let playlist of playlists) {
         if (playlist.songs.length === currentLargest) {
-          largestPlaylistTitle += playlist.title + ", ";
+          largestPlaylistTitle.push(playlist.title);
         }
       }
 
@@ -105,7 +105,7 @@ const about = {
       if (numPlaylists > 0) {
         currentSmallest = playlists[0].songs.length;
       }
-      let smallestPlaylistTitle = "";
+      let smallestPlaylistTitle = [];
 
       for (let playlist of playlists) {
         if (playlist.songs.length < currentSmallest) {
@@ -115,7 +115,7 @@ const about = {
 
       for (let playlist of playlists) {
         if (playlist.songs.length === currentSmallest) {
-          smallestPlaylistTitle += playlist.title + ", ";
+          smallestPlaylistTitle.push(playlist.title);
         }
       }
 
@@ -126,14 +126,8 @@ const about = {
         displayNumPlaylists: numPlaylists,
         displayNumSongs: numSongs,
         average: averagePerPlaylist,
-        largest: largestPlaylistTitle.substring(
-          0,
-          largestPlaylistTitle.length - 2
-        ),
-        smallest: smallestPlaylistTitle.substring(
-          0,
-          smallestPlaylistTitle.length - 2
-        ),
+        largest: largestPlaylistTitle,
+        smallest: smallestPlaylistTitle
       };
       response.render("about", viewData);
     } else response.redirect("/");
