@@ -37,7 +37,7 @@ const dashboard = {
     
     playlistStore.addPlaylist(newPlaylist, function() {
         response.redirect("/dashboard");
-      });
+    });
   },
   
   deletePlaylist(request, response) {
