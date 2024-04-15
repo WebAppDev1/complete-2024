@@ -1,42 +1,38 @@
 <section class="ui left aligned middle aligned segment" id="playlist{{@index}}">
-  
-   <div class="ui card">
-      <div class="image">
-        <img src="{{picture}}">
-      </div>
 
-      <div class="content">
-        <a class="header"> {{uppercase title}}</a>
-     
-      
+  <div class="ui card">
+    <div class="image">
+      <img src="{{picture}}">
+    </div>
+    <div class="content">
+      <a class="header"> {{uppercase title}}</a>
       <p>
-      <i class="music icon"></i>
-      {{#if songs}}
-        Total songs:
-        {{songs.length}}
-
+        <i class="music icon"></i>
+        {{#if songs}}
+          Total songs:{{songs.length}}
         {{else}}
-        Empty playlist!
-      {{/if}}
-
-      {{#if date}}
-        <br>
-        <i class="calendar alternate outline icon"></i>
-        Created on <i>{{formatDate date}}</i>
-      {{/if}}
-    </p>
-       </div>
-     <div class="extra content">
+          Empty playlist!
+        {{/if}}
+        {{#if date}}
+          <br>
+          <i class="calendar alternate outline icon"></i>
+          Created on <i>{{formatDate date}}</i>
+        {{/if}}
+      </p>
+    </div>
+    <div class="extra content">
       <a href="/playlist/{{id}}" class="ui icon button">
-          <i class="open folder icon"></i>
+        <i class="open folder icon"></i>
       </a>
-      <a href="/dashboard/deleteplaylist/{{id}}" class="ui icon button delplaylist"> 
-          <i class="trash icon"></i>
+      <a
+        href="/dashboard/deleteplaylist/{{id}}"
+        class="ui icon button delplaylist">
+        <i class="trash icon"></i>
       </a>
-    <button class="ui icon button" title="Edit playlist" id="showEdit{{@index}}">
-      <i class="ui pencil icon"></i>
-    </button>
-     </div>
+      <button class="ui icon button" title="Edit playlist" id="showEdit{{@index}}">
+        <i class="ui pencil icon"></i>
+      </button>
+    </div>
   </div>
 
 </section>
