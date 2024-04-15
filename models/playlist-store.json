@@ -50,28 +50,20 @@
       "date": "2024-04-02T17:04:27.054Z"
     },
     {
-      "id": "6978e869-d3c5-494b-ae14-de3400c0e28e",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Homer's Playlist",
-      "songs": [
-        {
-          "id": "4fb50e51-9db2-4765-81d9-45901d5f7800",
-          "title": "test",
-          "artist": "U2",
-          "genre": "Rock",
-          "duration": "3"
-        }
-      ],
-      "date": "2024-04-08T11:57:53.029Z",
-      "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1712577473/jb2eyrehbyhliywcjddm.jpg"
-    },
-    {
       "id": "58121a04-b02a-4757-91e4-7a02a8f83845",
       "userid": "a07b8c44-11cf-4ef2-93ed-0da593e21413",
       "title": "Summer Sounds",
       "songs": [],
       "date": "2024-04-15T09:11:48.789Z",
       "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1713172308/r13je5swcb5a2edahybh.jpg"
+    },
+    {
+      "id": "6f7f4a95-f4c6-4394-91f0-abadaa93fe82",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Summer Sounds",
+      "songs": [],
+      "date": "2024-04-15T14:00:04.193Z",
+      "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1713189604/iu5tqs27t0nkad3xsnq3.jpg"
     }
   ]
 }
