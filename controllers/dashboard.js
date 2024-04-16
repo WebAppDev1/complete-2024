@@ -26,18 +26,28 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     
     const timestamp = new Date();
+    
     const newPlaylist = {
       id: uuidv4(),
       userid: loggedInUser.id,
       title: request.body.title,
       songs: [],
       date: timestamp,
-      picture: request.files.picture,
+      //picture: request.files.picture,
     };
-    
-    playlistStore.addPlaylist(newPlaylist, function() {
+    if(request.files) {
+      newPlaylist.picture = request.files.picture
+      playlistStore.addPlaylist(newPlaylist, function() {
         response.redirect("/dashboard");
     });
+    }
+    else {
+      playlistStore.addPlaylist2(newPlaylist)
+        response.redirect("/dashboard");
+    }
+    
+    
+ 
   },
   
   deletePlaylist(request, response) {
