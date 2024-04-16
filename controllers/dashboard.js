@@ -33,18 +33,14 @@ const dashboard = {
       title: request.body.title,
       songs: [],
       date: timestamp,
-      //picture: request.files.picture,
+      picture: request.files.picture,
     };
-    if(request.files) {
-      newPlaylist.picture = request.files.picture
+  
+     
       playlistStore.addPlaylist(newPlaylist, function() {
         response.redirect("/dashboard");
     });
-    }
-    else {
-      playlistStore.addPlaylist2(newPlaylist)
-        response.redirect("/dashboard");
-    }
+  
     
     
  

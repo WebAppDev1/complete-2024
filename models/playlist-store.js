@@ -56,9 +56,6 @@ const playlistStore = {
   response();
 },
   
-  addPlaylist2(playlist) {
-    this.store.addCollection(this.collection, playlist);
-  },
   
   removeSong(id, songId) {
     this.store.removeItem(this.collection, id, this.array, songId);

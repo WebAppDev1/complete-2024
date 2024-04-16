@@ -64,21 +64,6 @@
       "songs": [],
       "date": "2024-04-15T14:00:04.193Z",
       "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1713189604/iu5tqs27t0nkad3xsnq3.jpg"
-    },
-    {
-      "id": "60aae545-0602-4d27-a76d-461539d530ef",
-      "userid": "a07b8c44-11cf-4ef2-93ed-0da593e21413",
-      "title": "tom",
-      "songs": [],
-      "date": "2024-04-16T22:44:00.444Z",
-      "picture": "http://res.cloudinary.com/web-app-dev-1/image/upload/v1713307440/az3p6893vmltjhdhuqw3.jpg"
-    },
-    {
-      "id": "49ccfdb3-7ad1-4b28-96fa-33d0ab1d4d9a",
-      "userid": "a07b8c44-11cf-4ef2-93ed-0da593e21413",
-      "title": "no tom",
-      "songs": [],
-      "date": "2024-04-16T22:48:26.250Z"
     }
   ]
 }
