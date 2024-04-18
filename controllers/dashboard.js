@@ -36,7 +36,7 @@ const dashboard = {
       picture: request.files.picture,
     };
   
-     
+     logger.info(newPlaylist.title)
       playlistStore.addPlaylist(newPlaylist, function() {
         response.redirect("/dashboard");
     });
