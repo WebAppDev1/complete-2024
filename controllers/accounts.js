@@ -10,7 +10,9 @@ const accounts = {
   //index function to render index page
   index(request, response) {
     const playlists = playlistStore.getAllPlaylists();
+    const users = userStore.getAllUsers();
     let numPlaylists = playlists.length;
+    let numUsers = users.length;
     let numSongs = 0;
     for (let item of playlists) {
       numSongs += item.songs.length;
@@ -19,6 +21,7 @@ const accounts = {
       title: "Login or Signup",
       totalPlaylists: numPlaylists,
       totalSongs: numSongs,
+      totalUsers: numUsers
     };
     response.render("index", viewData);
   },
